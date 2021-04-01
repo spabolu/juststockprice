@@ -12,7 +12,7 @@ priceRes.textContent = null
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault()
 
-  axios.get('https://financialmodelingprep.com/api/v3/quote/' + tickerInput.value + '?apikey=b8c495a52f0b8b43185f20eaaeefa031') // Free API so meh 🤷🏽‍♂️
+  axios.get('https://financialmodelingprep.com/api/v3/quote/' + tickerInput.value.toUpperCase() + '?apikey=b8c495a52f0b8b43185f20eaaeefa031') // Free API so meh 🤷🏽‍♂️
     .then((res) => {
       tickerInput.value = null;
 
