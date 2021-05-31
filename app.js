@@ -22,16 +22,16 @@ document.querySelector('form').addEventListener('submit', (e) => {
       if (res.data[0].change < 0) {
         priceRes.style.color = 'red';
         priceRes.textContent = `$` + res.data[0].price
-        priceRes.append(`  (` + res.data[0].changesPercentage + `%)    ⬇`);
+        priceRes.append(`  (` + res.data[0].changesPercentage + `%)    👇🏼`);
       } else {
         priceRes.style.color = 'green';
         priceRes.textContent = `$` + res.data[0].price
-        priceRes.append(`  (` + res.data[0].changesPercentage + `%)    ⬆`);
+        priceRes.append(`  (` + res.data[0].changesPercentage + `%)    👆🏼`);
       }
     })
     .catch((err) => {
       nameRes.textContent = null
       priceRes.textContent = null
-      failureRes.textContent = 'Invalid Ticker Symbol ✋'
+      failureRes.textContent = 'Invalid Ticker Symbol ✋🏼'
     })
 })
