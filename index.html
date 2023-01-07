@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Just Stock Price 💵</title>
+    <meta
+      name="description"
+      content="Check stock prices without ads, popups or bloatware! Display just the price of the stock, nothing more."
+    />
+    <meta name="author" content="spabolu" />
+    <meta name="url" content="https://juststockprice.netlify.app/" />
+    <link rel="profile" title="GitHub" href="https://github.com/spabolu" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8" />
-	<title>Just Stock Price 💵</title>
-	<meta name="description"
-		content="Check stock prices without ads, popups or bloatware! Display just the price of the stock, nothing more." />
-	<meta name="author" content="AnAstutehuMan" />
-	<meta name="url" content="https://juststockprice.netlify.app/" />
-	<link rel="profile" title="GitHub" href="http://git.io/JUWAL" />
-	<link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <h1>Just Stock Price 💵</h1>
 
-<body>
+    <form>
+      <input type="text" placeholder="Enter Ticker" />
+      <button type="submit">Submit 👍🏽</button>
+    </form>
 
-	<h1>Just Stock Price 💵</h1>
+    <br />
+    <br />
 
-	<form><input type="text" placeholder="Enter Ticker" />
-		<button type="submit">Submit 👌</button>
-	</form>
+    <h2 id="name"></h2>
+    <h2 id="price"></h2>
+    <h2 id="fail"></h2>
 
-	<br />
-	<br />
+    <br />
+    <br />
 
-	<h2 id='name'></h2>
-	<h2 id='price'></h2>
-	<h2 id='fail'></h2>
+    <p class="footer">
+      made by <bold>saketh pabolu</bold> <br />
+      <a href="https://github.com/spabolu/juststockprice">source code</a>
+    </p>
 
-	<br />
-	<br />
-
-	<p class="footer">made by <a href="//sakethpabolu.com">saketh pabolu</a> with 🧡 <br /> <a
-			href="//git.io/JUXzf">source code</a></p>
-
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="app.js"></script>
-</body>
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
